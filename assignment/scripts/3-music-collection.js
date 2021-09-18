@@ -27,6 +27,14 @@ function showCollection(array) {
 }
 showCollection(collection);
 
-function findByArtist() {
-  
+function findByArtist(artist) {
+  let searchArtist = [];
+  for (let album of collection) {
+    if (album.artist === artist) {
+      searchArtist.push(album);
+    }
+  }
+  return searchArtist;
 }
+console.log('Albums by Lil Uzi Vert in Collection:', findByArtist('Lil Uzi Vert'));
+console.log('Albums by Jack Harlow in Collection:', findByArtist('Jack Harlow'));
