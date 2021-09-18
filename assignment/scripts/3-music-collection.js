@@ -18,3 +18,15 @@ console.log('Album Added to Collection:', addToCollection('ATLiens', 'Outkast', 
 console.log('Album Added to Collection:', addToCollection('Legends Never Die', 'Juice WRLD', 2020));
 console.log('Album Added to Collection:', addToCollection('Luv Is Rage', 'Lil Uzi Vert', 2015));
 console.log(collection);
+
+function showCollection(array) {
+  console.log(`Albums in Collection: ${collection.length}`);
+  for (let info of collection) {
+    console.log(`${info.title} by ${info.artist}, published in ${info.yearPublished}`);
+  }
+}
+showCollection(collection);
+
+function findByArtist() {
+  
+}
